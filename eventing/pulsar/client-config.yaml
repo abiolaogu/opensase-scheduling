@@ -1,0 +1,11 @@
+pulsar:
+  broker_url: pulsar://pulsar-broker.pulsar.svc.cluster.local:6650
+  http_url: http://pulsar-broker.pulsar.svc.cluster.local:8080
+  tenant: billyronks
+  namespace: opensase-scheduling
+  producers:
+    - topic: persistent://billyronks/opensase-scheduling/command
+    - topic: persistent://billyronks/opensase-scheduling/event
+  consumers:
+    - topic: persistent://billyronks/opensase-scheduling/audit
+      subscription: opensase-scheduling-svc-sub

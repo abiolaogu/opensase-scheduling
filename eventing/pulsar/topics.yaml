@@ -1,0 +1,11 @@
+tenant: billyronks
+namespace: opensase-scheduling
+topics:
+  - name: persistent://billyronks/opensase-scheduling/command
+    partitions: 6
+  - name: persistent://billyronks/opensase-scheduling/event
+    partitions: 6
+  - name: persistent://billyronks/opensase-scheduling/audit
+    partitions: 6
+  - name: persistent://billyronks/global/observability
+    partitions: 6
