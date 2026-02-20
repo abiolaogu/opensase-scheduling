@@ -1,0 +1,11 @@
+tenant: billyronks
+namespace: extract-scheduling
+topics:
+  - name: persistent://billyronks/extract-scheduling/command
+    partitions: 6
+  - name: persistent://billyronks/extract-scheduling/event
+    partitions: 6
+  - name: persistent://billyronks/extract-scheduling/audit
+    partitions: 6
+  - name: persistent://billyronks/global/observability
+    partitions: 6
